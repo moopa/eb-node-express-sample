@@ -1,4 +1,16 @@
-# AWS Elastic Beanstalk Express Sample App
+# AWS Elastic Beanstalk Express Sample App (Updated for Amazon Linux 2)
+
+## Update notes:
+
+If you have been following the Amazon tutorial [Deploying a Node.js application with DynamoDB to Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-dynamodb-tutorial.html?p=gsrc&c=ho_dnwa) you will realise on deploying it no longer works.
+
+This fork resolves the issue by updating the `options.config` with namespaces relevant for Amazon Linux 2.
+
+## Manual zip and deployment to EB (macOS users) 
+
+If you wish to manually zip your cloned project, cd into the project directory and run the command `zip -r  eb-node-express-sample-v1.2.zip .` If you use finder and compress the folder, it will include the parent folder and will fail to deploy.
+
+
 This sample application uses the [Express](https://expressjs.com/) framework and [Bootstrap](http://getbootstrap.com/) to build a simple, scalable customer signup form that is deployed to [AWS Elastic Beanstalk](http://aws.amazon.com/elasticbeanstalk/). The application stores data in [Amazon DynamoDB](http://aws.amazon.com/dynamodb/) and publishes notifications to the [Amazon Simple Notification Service (SNS)](http://aws.amazon.com/sns/) when a customer fills out the form.
 
 ## Features
